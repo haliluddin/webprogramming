@@ -81,6 +81,17 @@ class Account{
 
         return $data;
     }
+    function showAll() {
+        $sql = "SELECT * FROM account";
+        $query = $this->db->connect()->prepare($sql);
+
+        if ($query->execute()) {
+            return $query->fetchAll(PDO::FETCH_ASSOC); // Fetch all accounts as associative arrays
+        }
+
+        return []; // Return an empty array if no accounts are found
+    }
+
 }
 
 // $obj = new Account();
