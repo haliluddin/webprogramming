@@ -37,8 +37,8 @@
                             <thead class="table-light">
                                 <tr>
                                     <th class="text-start">No.</th>
-                                    <th>First Name</th>
                                     <th>Last Name</th>
+                                    <th>First Name</th>
                                     <th>Username</th>
                                     <th>Role</th>
                                     <th>Action</th>
